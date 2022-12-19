@@ -1,0 +1,1447 @@
+2022-12-13 09:53:38,854 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2022-12-13 09:53:38,906 INFO org.springframework.boot.StartupInfoLogger [main] Starting DataJpaBooksProjectApplication using Java 17.0.4.1 on LAPTOP-836RRBLI with PID 6520 (C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project\target\classes started by Admin in C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project)
+2022-12-13 09:53:38,907 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-13 09:53:39,804 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-13 09:53:39,983 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 157 ms. Found 2 JPA repository interfaces.
+2022-12-13 09:53:40,964 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2022-12-13 09:53:40,967 INFO org.apache.juli.logging.DirectJDKLog [main] Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2022-12-13 09:53:40,968 INFO org.apache.juli.logging.DirectJDKLog [main] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-12-13 09:53:40,970 INFO org.apache.juli.logging.DirectJDKLog [main] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-12-13 09:53:40,983 INFO org.apache.juli.logging.DirectJDKLog [main] OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2022-12-13 09:53:41,009 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2022-12-13 09:53:41,011 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-12-13 09:53:41,012 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-13 09:53:41,265 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-12-13 09:53:41,265 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2302 ms
+2022-12-13 09:53:41,587 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-13 09:53:41,705 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-13 09:53:42,044 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-13 09:53:42,312 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-12-13 09:53:43,096 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-12-13 09:53:43,143 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-12-13 09:53:44,736 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-13 09:53:44,760 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-13 09:53:45,744 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-13 09:53:46,122 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2022-12-13 09:53:46,157 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2022-12-13 09:53:46,171 INFO org.springframework.boot.StartupInfoLogger [main] Started DataJpaBooksProjectApplication in 7.891 seconds (JVM running for 16.179)
+2022-12-13 09:53:46,278 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 09:53:46,296 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 09:53:46,300 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 09:53:46,354 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 09:53:46,362 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 09:53:46,366 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 09:53:50,236 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T09:53:50.236688700
+2022-12-13 09:53:56,216 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T09:53:56.216660200
+2022-12-13 09:54:02,197 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T09:54:02.197939600
+2022-12-13 09:54:08,199 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T09:54:08.199146700
+2022-12-13 09:54:14,202 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T09:54:14.202364500
+2022-12-13 09:54:20,204 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T09:54:20.204666200
+2022-12-13 09:54:26,204 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T09:54:26.204046600
+2022-12-13 09:54:26,776 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(10)-127.0.0.1] Application shutdown requested.
+2022-12-13 09:54:26,797 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8082"]
+2022-12-13 09:54:26,797 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Stopping service [Tomcat]
+2022-12-13 09:54:26,803 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8082"]
+2022-12-13 09:54:26,807 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8082"]
+2022-12-13 09:54:26,812 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(10)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-13 09:54:26,814 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(10)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-12-13 09:54:26,836 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(10)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-12-13 09:54:46,355 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2022-12-13 09:54:46,430 INFO org.springframework.boot.StartupInfoLogger [main] Starting DataJpaBooksProjectApplication using Java 17.0.4.1 on LAPTOP-836RRBLI with PID 6716 (C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project\target\classes started by Admin in C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project)
+2022-12-13 09:54:46,432 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-13 09:54:47,542 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-13 09:54:47,672 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 113 ms. Found 2 JPA repository interfaces.
+2022-12-13 09:54:48,743 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2022-12-13 09:54:48,745 INFO org.apache.juli.logging.DirectJDKLog [main] Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2022-12-13 09:54:48,746 INFO org.apache.juli.logging.DirectJDKLog [main] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-12-13 09:54:48,747 INFO org.apache.juli.logging.DirectJDKLog [main] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-12-13 09:54:48,751 INFO org.apache.juli.logging.DirectJDKLog [main] OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2022-12-13 09:54:48,766 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2022-12-13 09:54:48,767 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-12-13 09:54:48,767 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-13 09:54:48,997 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-12-13 09:54:48,998 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2480 ms
+2022-12-13 09:54:49,237 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-13 09:54:49,311 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-13 09:54:49,562 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-13 09:54:49,705 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-12-13 09:54:50,312 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-12-13 09:54:50,349 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-12-13 09:54:51,766 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-13 09:54:51,789 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-13 09:54:52,770 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-13 09:54:53,198 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2022-12-13 09:54:53,221 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2022-12-13 09:54:53,234 INFO org.springframework.boot.StartupInfoLogger [main] Started DataJpaBooksProjectApplication in 7.507 seconds (JVM running for 8.961)
+2022-12-13 09:54:53,352 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 09:54:53,373 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 09:54:53,376 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 09:54:53,421 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 09:54:53,430 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 09:54:53,433 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 09:54:57,392 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T09:54:57.392094
+2022-12-13 09:55:03,268 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T09:55:03.268445300
+2022-12-13 09:55:09,270 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T09:55:09.270952500
+2022-12-13 09:55:15,146 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(7)-127.0.0.1] Application shutdown requested.
+2022-12-13 09:55:15,166 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(7)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8082"]
+2022-12-13 09:55:15,167 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(7)-127.0.0.1] Stopping service [Tomcat]
+2022-12-13 09:55:15,173 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(7)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8082"]
+2022-12-13 09:55:15,177 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(7)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8082"]
+2022-12-13 09:55:15,193 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(7)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-13 09:55:15,198 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(7)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-12-13 09:55:15,223 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(7)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-12-13 09:55:15,272 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T09:55:15.272307800
+2022-12-13 09:55:15,281 ERROR org.springframework.aop.interceptor.SimpleAsyncUncaughtExceptionHandler [ThreadPoolTaskExecutor-4] Unexpected exception occurred invoking async method: public void com.globale.book.Service.PriceSchedule.computePrice() throws java.lang.InterruptedException
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:309)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:137)
+	at net.javacrumbs.shedlock.provider.jdbctemplate.JdbcTemplateStorageAccessor.execute(JdbcTemplateStorageAccessor.java:115)
+	at net.javacrumbs.shedlock.provider.jdbctemplate.JdbcTemplateStorageAccessor.doUnlock(JdbcTemplateStorageAccessor.java:110)
+	at net.javacrumbs.shedlock.provider.jdbctemplate.JdbcTemplateStorageAccessor.unlock(JdbcTemplateStorageAccessor.java:101)
+	at net.javacrumbs.shedlock.support.StorageBasedLockProvider$StorageLock.doUnlock(StorageBasedLockProvider.java:104)
+	at net.javacrumbs.shedlock.core.AbstractSimpleLock.unlock(AbstractSimpleLock.java:35)
+	at net.javacrumbs.shedlock.core.DefaultLockingTaskExecutor.executeWithLock(DefaultLockingTaskExecutor.java:79)
+	at net.javacrumbs.shedlock.spring.aop.MethodProxyScheduledLockAdvisor$LockingInterceptor.invoke(MethodProxyScheduledLockAdvisor.java:86)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:96)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:265)
+	... 17 common frames omitted
+2022-12-13 09:57:07,858 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2022-12-13 09:57:07,925 INFO org.springframework.boot.StartupInfoLogger [main] Starting DataJpaBooksProjectApplication using Java 17.0.4.1 on LAPTOP-836RRBLI with PID 15032 (C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project\target\classes started by Admin in C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project)
+2022-12-13 09:57:07,927 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-13 09:57:09,024 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-13 09:57:09,165 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 122 ms. Found 2 JPA repository interfaces.
+2022-12-13 09:57:10,189 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2022-12-13 09:57:10,191 INFO org.apache.juli.logging.DirectJDKLog [main] Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2022-12-13 09:57:10,192 INFO org.apache.juli.logging.DirectJDKLog [main] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-12-13 09:57:10,193 INFO org.apache.juli.logging.DirectJDKLog [main] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-12-13 09:57:10,198 INFO org.apache.juli.logging.DirectJDKLog [main] OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2022-12-13 09:57:10,211 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2022-12-13 09:57:10,211 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-12-13 09:57:10,212 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-13 09:57:10,379 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-12-13 09:57:10,379 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2379 ms
+2022-12-13 09:57:10,645 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-13 09:57:10,748 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-13 09:57:10,994 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-13 09:57:11,146 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-12-13 09:57:11,762 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-12-13 09:57:11,787 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-12-13 09:57:13,237 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-13 09:57:13,255 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-13 09:57:14,289 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-13 09:57:14,966 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2022-12-13 09:57:15,021 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2022-12-13 09:57:15,045 INFO org.springframework.boot.StartupInfoLogger [main] Started DataJpaBooksProjectApplication in 7.83 seconds (JVM running for 9.312)
+2022-12-13 09:57:15,209 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 09:57:15,234 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 09:57:15,237 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 09:57:15,305 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 09:57:15,315 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 09:57:15,319 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 09:57:19,124 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T09:57:19.124275600
+2022-12-13 09:57:25,073 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T09:57:25.073621600
+2022-12-13 09:57:31,084 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T09:57:31.084667
+2022-12-13 09:57:37,059 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T09:57:37.059126700
+2022-12-13 09:57:43,074 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T09:57:43.074465200
+2022-12-13 09:57:49,057 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T09:57:49.057874100
+2022-12-13 09:57:55,074 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T09:57:55.074652100
+2022-12-13 09:58:01,084 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T09:58:01.084609900
+2022-12-13 09:58:07,065 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T09:58:07.065865
+2022-12-13 09:58:13,088 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T09:58:13.088552200
+2022-12-13 09:58:19,077 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T09:58:19.077417600
+2022-12-13 09:58:25,073 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T09:58:25.073858900
+2022-12-13 09:58:25,496 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(11)-127.0.0.1] Application shutdown requested.
+2022-12-13 09:58:25,514 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8082"]
+2022-12-13 09:58:25,514 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Stopping service [Tomcat]
+2022-12-13 09:58:25,519 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8082"]
+2022-12-13 09:58:25,522 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8082"]
+2022-12-13 09:58:25,527 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(11)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-13 09:58:25,529 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(11)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-12-13 09:58:25,546 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(11)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-12-13 10:46:11,129 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2022-12-13 10:46:11,197 INFO org.springframework.boot.StartupInfoLogger [main] Starting DataJpaBooksProjectApplication using Java 17.0.4.1 on LAPTOP-836RRBLI with PID 4228 (C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project\target\classes started by Admin in C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project)
+2022-12-13 10:46:11,198 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-13 10:46:12,352 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-13 10:46:12,451 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 88 ms. Found 2 JPA repository interfaces.
+2022-12-13 10:46:13,640 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2022-12-13 10:46:13,644 INFO org.apache.juli.logging.DirectJDKLog [main] Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2022-12-13 10:46:13,645 INFO org.apache.juli.logging.DirectJDKLog [main] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-12-13 10:46:13,645 INFO org.apache.juli.logging.DirectJDKLog [main] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-12-13 10:46:13,675 INFO org.apache.juli.logging.DirectJDKLog [main] OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2022-12-13 10:46:13,690 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2022-12-13 10:46:13,690 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-12-13 10:46:13,691 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-13 10:46:13,914 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-12-13 10:46:13,915 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2630 ms
+2022-12-13 10:46:14,171 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Flyway Community Edition 8.5.13 by Redgate
+2022-12-13 10:46:14,172 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-12-13 10:46:14,173 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] 
+2022-12-13 10:46:14,182 ERROR org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Skipping filesystem location:\another\migration\directory (not found).
+2022-12-13 10:46:14,188 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] 1 SQL migrations were detected but not run because they did not follow the filename convention.
+2022-12-13 10:46:14,188 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] If this is in error, enable debug logging or 'validateMigrationNaming' to fail fast and see a list of the invalid file names.
+2022-12-13 10:46:14,192 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-12-13 10:46:14,741 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-12-13 10:46:14,755 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unsupported Database: MySQL 8.0
+2022-12-13 10:46:14,755 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2022-12-13 10:46:14,762 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2022-12-13 10:46:14,767 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2022-12-13 10:46:14,789 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-13 10:46:14,839 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unsupported Database: MySQL 8.0
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.globale.book.DataJpaBooksProjectApplication.main(DataJpaBooksProjectApplication.java:10)
+Caused by: org.flywaydb.core.api.FlywayException: Unsupported Database: MySQL 8.0
+	at org.flywaydb.core.internal.database.DatabaseTypeRegister.getDatabaseTypeForConnection(DatabaseTypeRegister.java:106)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:76)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:147)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:124)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 18 common frames omitted
+2022-12-13 10:49:12,171 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2022-12-13 10:49:12,252 INFO org.springframework.boot.StartupInfoLogger [main] Starting DataJpaBooksProjectApplication using Java 17.0.4.1 on LAPTOP-836RRBLI with PID 17676 (C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project\target\classes started by Admin in C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project)
+2022-12-13 10:49:12,253 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-13 10:49:13,547 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-13 10:49:13,671 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 111 ms. Found 2 JPA repository interfaces.
+2022-12-13 10:49:14,944 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2022-12-13 10:49:14,949 INFO org.apache.juli.logging.DirectJDKLog [main] Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2022-12-13 10:49:14,950 INFO org.apache.juli.logging.DirectJDKLog [main] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-12-13 10:49:14,950 INFO org.apache.juli.logging.DirectJDKLog [main] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-12-13 10:49:14,958 INFO org.apache.juli.logging.DirectJDKLog [main] OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2022-12-13 10:49:14,978 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2022-12-13 10:49:14,979 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-12-13 10:49:14,980 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-13 10:49:15,156 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-12-13 10:49:15,157 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2826 ms
+2022-12-13 10:49:15,394 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Flyway Community Edition 8.5.13 by Redgate
+2022-12-13 10:49:15,394 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-12-13 10:49:15,395 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] 
+2022-12-13 10:49:15,405 ERROR org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Skipping filesystem location:\another\migration\directory (not found).
+2022-12-13 10:49:15,412 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] 1 SQL migrations were detected but not run because they did not follow the filename convention.
+2022-12-13 10:49:15,412 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] If this is in error, enable debug logging or 'validateMigrationNaming' to fail fast and see a list of the invalid file names.
+2022-12-13 10:49:15,416 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-12-13 10:49:16,045 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-12-13 10:49:16,111 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Database: jdbc:mysql://localhost:3306/book (MySQL 8.0)
+2022-12-13 10:49:16,203 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Successfully validated 0 migrations (execution time 00:00.023s)
+2022-12-13 10:49:16,205 WARN org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] No migrations found. Are your locations set up correctly?
+2022-12-13 10:49:16,285 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Creating Schema History table `book`.`flyway_schema_history` with baseline ...
+2022-12-13 10:49:16,424 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Successfully baselined schema with version: 1
+2022-12-13 10:49:16,456 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Current version of schema `book`: 1
+2022-12-13 10:49:16,459 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Schema `book` is up to date. No migration necessary.
+2022-12-13 10:49:16,648 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-13 10:49:16,806 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-13 10:49:17,194 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-13 10:49:17,477 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-12-13 10:49:18,916 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-13 10:49:18,935 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-13 10:49:19,989 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-13 10:49:20,602 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2022-12-13 10:49:20,654 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2022-12-13 10:49:20,675 INFO org.springframework.boot.StartupInfoLogger [main] Started DataJpaBooksProjectApplication in 9.186 seconds (JVM running for 11.03)
+2022-12-13 10:49:20,847 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 10:49:20,869 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 10:49:20,872 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 10:49:20,937 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 10:49:20,949 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 10:49:20,952 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 10:49:24,875 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T10:49:24.875816300
+2022-12-13 10:49:24,875 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T10:49:24.875816300
+2022-12-13 10:49:30,704 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T10:49:30.704056300
+2022-12-13 10:49:30,704 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T10:49:30.704056300
+2022-12-13 10:49:36,707 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T10:49:36.707009400
+2022-12-13 10:49:36,707 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T10:49:36.707009400
+2022-12-13 10:49:42,701 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T10:49:42.701459500
+2022-12-13 10:49:42,701 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T10:49:42.701459500
+2022-12-13 10:49:48,712 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T10:49:48.712407600
+2022-12-13 10:49:48,712 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T10:49:48.712407600
+2022-12-13 10:49:54,705 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T10:49:54.705907800
+2022-12-13 10:49:54,705 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T10:49:54.705907800
+2022-12-13 10:50:00,712 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T10:50:00.712536600
+2022-12-13 10:50:00,712 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T10:50:00.712536600
+2022-12-13 10:50:06,696 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T10:50:06.696067300
+2022-12-13 10:50:06,711 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T10:50:06.711333600
+2022-12-13 10:50:12,720 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T10:50:12.720502800
+2022-12-13 10:50:12,720 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T10:50:12.720502800
+2022-12-13 10:50:18,704 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T10:50:18.704343100
+2022-12-13 10:50:18,704 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T10:50:18.704343100
+2022-12-13 10:50:24,696 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T10:50:24.696734200
+2022-12-13 10:50:24,696 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T10:50:24.696734200
+2022-12-13 10:50:30,705 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T10:50:30.705732700
+2022-12-13 10:50:30,705 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T10:50:30.705732700
+2022-12-13 10:50:36,716 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T10:50:36.716874400
+2022-12-13 10:50:36,716 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T10:50:36.716874400
+2022-12-13 10:50:42,714 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T10:50:42.714134500
+2022-12-13 10:50:42,714 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T10:50:42.714134500
+2022-12-13 10:50:48,694 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T10:50:48.694375600
+2022-12-13 10:50:48,694 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T10:50:48.694375600
+2022-12-13 10:50:54,704 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T10:50:54.704701500
+2022-12-13 10:50:54,704 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T10:50:54.704701500
+2022-12-13 10:51:00,709 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T10:51:00.709021600
+2022-12-13 10:51:00,709 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T10:51:00.709021600
+2022-12-13 10:51:06,699 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T10:51:06.699934200
+2022-12-13 10:51:06,699 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T10:51:06.699934200
+2022-12-13 10:51:12,703 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T10:51:12.703332300
+2022-12-13 10:51:12,703 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T10:51:12.703332300
+2022-12-13 10:51:18,707 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T10:51:18.707374800
+2022-12-13 10:51:18,707 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T10:51:18.707374800
+2022-12-13 10:51:24,704 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T10:51:24.704450500
+2022-12-13 10:51:24,704 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T10:51:24.704450500
+2022-12-13 10:51:30,697 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T10:51:30.697347900
+2022-12-13 10:51:30,711 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T10:51:30.711356600
+2022-12-13 10:51:36,712 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T10:51:36.712467200
+2022-12-13 10:51:36,712 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T10:51:36.712467200
+2022-12-13 10:51:42,705 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T10:51:42.705759600
+2022-12-13 10:51:42,705 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T10:51:42.705759600
+2022-12-13 10:51:48,702 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T10:51:48.702738
+2022-12-13 10:51:48,702 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T10:51:48.702738
+2022-12-13 10:51:54,716 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T10:51:54.716712800
+2022-12-13 10:51:54,716 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T10:51:54.716712800
+2022-12-13 10:52:00,707 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T10:52:00.707018800
+2022-12-13 10:52:00,707 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T10:52:00.707018800
+2022-12-13 10:52:06,707 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T10:52:06.707962200
+2022-12-13 10:52:06,707 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T10:52:06.707962200
+2022-12-13 10:52:12,704 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T10:52:12.704629700
+2022-12-13 10:52:12,704 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T10:52:12.704629700
+2022-12-13 10:52:18,702 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T10:52:18.702153200
+2022-12-13 10:52:18,702 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T10:52:18.702153200
+2022-12-13 10:52:24,717 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T10:52:24.717600700
+2022-12-13 10:52:24,717 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T10:52:24.717600700
+2022-12-13 10:52:30,696 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T10:52:30.696080900
+2022-12-13 10:52:30,696 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T10:52:30.696080900
+2022-12-13 10:52:36,703 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T10:52:36.703708
+2022-12-13 10:52:36,703 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T10:52:36.703708
+2022-12-13 10:52:42,707 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T10:52:42.707672
+2022-12-13 10:52:42,707 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T10:52:42.707672
+2022-12-13 10:52:48,701 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T10:52:48.701385300
+2022-12-13 10:52:48,701 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T10:52:48.701385300
+2022-12-13 10:52:54,697 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T10:52:54.697169600
+2022-12-13 10:52:54,697 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T10:52:54.697169600
+2022-12-13 10:53:00,688 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T10:53:00.688948200
+2022-12-13 10:53:00,702 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T10:53:00.702693500
+2022-12-13 10:53:06,692 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T10:53:06.692812600
+2022-12-13 10:53:06,692 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T10:53:06.692812600
+2022-12-13 10:53:12,716 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T10:53:12.716523
+2022-12-13 10:53:12,716 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T10:53:12.716523
+2022-12-13 10:53:18,713 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T10:53:18.712615400
+2022-12-13 10:53:18,713 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T10:53:18.713022400
+2022-12-13 10:53:24,704 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T10:53:24.704510600
+2022-12-13 10:53:24,706 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T10:53:24.706331600
+2022-12-13 10:53:30,685 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T10:53:30.685616500
+2022-12-13 10:53:30,685 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T10:53:30.685616500
+2022-12-13 10:53:36,710 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T10:53:36.710965600
+2022-12-13 10:53:36,710 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T10:53:36.710965600
+2022-12-13 10:53:42,703 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T10:53:42.703556500
+2022-12-13 10:53:42,703 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T10:53:42.703556500
+2022-12-13 10:53:48,714 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T10:53:48.714588800
+2022-12-13 10:53:48,714 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T10:53:48.714588800
+2022-12-13 10:53:54,707 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T10:53:54.707684500
+2022-12-13 10:53:54,707 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T10:53:54.707684500
+2022-12-13 10:54:00,696 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T10:54:00.696828700
+2022-12-13 10:54:00,696 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T10:54:00.696828700
+2022-12-13 10:54:06,702 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T10:54:06.702704700
+2022-12-13 10:54:06,702 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T10:54:06.702704700
+2022-12-13 10:54:12,698 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T10:54:12.698842
+2022-12-13 10:54:12,698 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T10:54:12.698842
+2022-12-13 10:54:18,719 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T10:54:18.719458200
+2022-12-13 10:54:18,719 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T10:54:18.719458200
+2022-12-13 10:54:24,710 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T10:54:24.710002300
+2022-12-13 10:54:24,710 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T10:54:24.710002300
+2022-12-13 10:54:30,698 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T10:54:30.698322100
+2022-12-13 10:54:30,698 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T10:54:30.698322100
+2022-12-13 10:54:36,705 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T10:54:36.705131
+2022-12-13 10:54:36,719 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T10:54:36.719990400
+2022-12-13 10:54:40,565 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(13)-127.0.0.1] Application shutdown requested.
+2022-12-13 10:54:40,677 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(13)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8082"]
+2022-12-13 10:54:40,678 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(13)-127.0.0.1] Stopping service [Tomcat]
+2022-12-13 10:54:40,685 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(13)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8082"]
+2022-12-13 10:54:40,689 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(13)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8082"]
+2022-12-13 10:54:40,695 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(13)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-13 10:54:40,698 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(13)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-12-13 10:54:40,712 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(13)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-12-13 10:54:42,700 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T10:54:42.700321300
+2022-12-13 10:54:42,700 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T10:54:42.700321300
+2022-12-13 10:54:42,708 ERROR org.springframework.aop.interceptor.SimpleAsyncUncaughtExceptionHandler [ThreadPoolTaskExecutor-4] Unexpected exception occurred invoking async method: public void com.globale.book.Service.PriceSchedule.computePrice() throws java.lang.InterruptedException
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:309)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:137)
+	at net.javacrumbs.shedlock.provider.jdbctemplate.JdbcTemplateStorageAccessor.execute(JdbcTemplateStorageAccessor.java:115)
+	at net.javacrumbs.shedlock.provider.jdbctemplate.JdbcTemplateStorageAccessor.doUnlock(JdbcTemplateStorageAccessor.java:110)
+	at net.javacrumbs.shedlock.provider.jdbctemplate.JdbcTemplateStorageAccessor.unlock(JdbcTemplateStorageAccessor.java:101)
+	at net.javacrumbs.shedlock.support.StorageBasedLockProvider$StorageLock.doUnlock(StorageBasedLockProvider.java:104)
+	at net.javacrumbs.shedlock.core.AbstractSimpleLock.unlock(AbstractSimpleLock.java:35)
+	at net.javacrumbs.shedlock.core.DefaultLockingTaskExecutor.executeWithLock(DefaultLockingTaskExecutor.java:79)
+	at net.javacrumbs.shedlock.spring.aop.MethodProxyScheduledLockAdvisor$LockingInterceptor.invoke(MethodProxyScheduledLockAdvisor.java:86)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:96)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:265)
+	... 17 common frames omitted
+2022-12-13 10:54:42,708 ERROR org.springframework.aop.interceptor.SimpleAsyncUncaughtExceptionHandler [ThreadPoolTaskExecutor-3] Unexpected exception occurred invoking async method: public void com.globale.book.Service.PriceSchedule.computeDiscount() throws java.lang.InterruptedException
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:309)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:137)
+	at net.javacrumbs.shedlock.provider.jdbctemplate.JdbcTemplateStorageAccessor.execute(JdbcTemplateStorageAccessor.java:115)
+	at net.javacrumbs.shedlock.provider.jdbctemplate.JdbcTemplateStorageAccessor.doUnlock(JdbcTemplateStorageAccessor.java:110)
+	at net.javacrumbs.shedlock.provider.jdbctemplate.JdbcTemplateStorageAccessor.unlock(JdbcTemplateStorageAccessor.java:101)
+	at net.javacrumbs.shedlock.support.StorageBasedLockProvider$StorageLock.doUnlock(StorageBasedLockProvider.java:104)
+	at net.javacrumbs.shedlock.core.AbstractSimpleLock.unlock(AbstractSimpleLock.java:35)
+	at net.javacrumbs.shedlock.core.DefaultLockingTaskExecutor.executeWithLock(DefaultLockingTaskExecutor.java:79)
+	at net.javacrumbs.shedlock.spring.aop.MethodProxyScheduledLockAdvisor$LockingInterceptor.invoke(MethodProxyScheduledLockAdvisor.java:86)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:96)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:265)
+	... 17 common frames omitted
+2022-12-13 10:54:59,143 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2022-12-13 10:54:59,209 INFO org.springframework.boot.StartupInfoLogger [main] Starting DataJpaBooksProjectApplication using Java 17.0.4.1 on LAPTOP-836RRBLI with PID 16208 (C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project\target\classes started by Admin in C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project)
+2022-12-13 10:54:59,210 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-13 10:55:00,318 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-13 10:55:00,444 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 110 ms. Found 2 JPA repository interfaces.
+2022-12-13 10:55:01,435 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2022-12-13 10:55:01,437 INFO org.apache.juli.logging.DirectJDKLog [main] Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2022-12-13 10:55:01,438 INFO org.apache.juli.logging.DirectJDKLog [main] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-12-13 10:55:01,439 INFO org.apache.juli.logging.DirectJDKLog [main] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-12-13 10:55:01,443 INFO org.apache.juli.logging.DirectJDKLog [main] OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2022-12-13 10:55:01,456 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2022-12-13 10:55:01,457 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-12-13 10:55:01,458 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-13 10:55:01,665 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-12-13 10:55:01,666 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2381 ms
+2022-12-13 10:55:01,948 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Flyway Community Edition 8.5.13 by Redgate
+2022-12-13 10:55:01,949 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-12-13 10:55:01,949 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] 
+2022-12-13 10:55:01,959 ERROR org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Skipping filesystem location:\another\migration\directory (not found).
+2022-12-13 10:55:01,965 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] 1 SQL migrations were detected but not run because they did not follow the filename convention.
+2022-12-13 10:55:01,966 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] If this is in error, enable debug logging or 'validateMigrationNaming' to fail fast and see a list of the invalid file names.
+2022-12-13 10:55:01,970 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-12-13 10:55:02,562 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-12-13 10:55:02,615 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Database: jdbc:mysql://localhost:3306/book (MySQL 8.0)
+2022-12-13 10:55:02,691 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Successfully validated 1 migration (execution time 00:00.029s)
+2022-12-13 10:55:02,719 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Current version of schema `book`: 1
+2022-12-13 10:55:02,720 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Schema `book` is up to date. No migration necessary.
+2022-12-13 10:55:02,849 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-13 10:55:02,939 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-13 10:55:03,234 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-13 10:55:03,428 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-12-13 10:55:04,714 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-13 10:55:04,743 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-13 10:55:06,043 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-13 10:55:06,640 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2022-12-13 10:55:06,672 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2022-12-13 10:55:06,688 INFO org.springframework.boot.StartupInfoLogger [main] Started DataJpaBooksProjectApplication in 8.227 seconds (JVM running for 9.786)
+2022-12-13 10:55:06,844 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 10:55:06,866 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 10:55:06,869 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 10:55:06,927 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 10:55:06,938 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 10:55:06,943 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 10:58:50,347 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(12)-127.0.0.1] Application shutdown requested.
+2022-12-13 10:58:50,370 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(12)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8082"]
+2022-12-13 10:58:50,370 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(12)-127.0.0.1] Stopping service [Tomcat]
+2022-12-13 10:58:50,377 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(12)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8082"]
+2022-12-13 10:58:50,381 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(12)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8082"]
+2022-12-13 10:58:50,386 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(12)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-13 10:58:50,389 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(12)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-12-13 10:58:50,404 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(12)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-12-13 10:59:08,515 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2022-12-13 10:59:08,581 INFO org.springframework.boot.StartupInfoLogger [main] Starting DataJpaBooksProjectApplication using Java 17.0.4.1 on LAPTOP-836RRBLI with PID 12112 (C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project\target\classes started by Admin in C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project)
+2022-12-13 10:59:08,582 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-13 10:59:09,687 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-13 10:59:09,788 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 87 ms. Found 2 JPA repository interfaces.
+2022-12-13 10:59:10,881 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2022-12-13 10:59:10,884 INFO org.apache.juli.logging.DirectJDKLog [main] Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2022-12-13 10:59:10,885 INFO org.apache.juli.logging.DirectJDKLog [main] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-12-13 10:59:10,886 INFO org.apache.juli.logging.DirectJDKLog [main] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-12-13 10:59:10,892 INFO org.apache.juli.logging.DirectJDKLog [main] OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2022-12-13 10:59:10,909 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2022-12-13 10:59:10,910 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-12-13 10:59:10,911 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-13 10:59:11,148 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-12-13 10:59:11,148 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2494 ms
+2022-12-13 10:59:11,404 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Flyway Community Edition 8.5.13 by Redgate
+2022-12-13 10:59:11,405 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-12-13 10:59:11,405 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] 
+2022-12-13 10:59:11,412 ERROR org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Skipping filesystem location:\another\migration\directory (not found).
+2022-12-13 10:59:11,417 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] 2 SQL migrations were detected but not run because they did not follow the filename convention.
+2022-12-13 10:59:11,417 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] If this is in error, enable debug logging or 'validateMigrationNaming' to fail fast and see a list of the invalid file names.
+2022-12-13 10:59:11,420 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-12-13 10:59:11,952 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-12-13 10:59:12,020 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Database: jdbc:mysql://localhost:3306/book (MySQL 8.0)
+2022-12-13 10:59:12,105 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Successfully validated 1 migration (execution time 00:00.030s)
+2022-12-13 10:59:12,128 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Current version of schema `book`: 1
+2022-12-13 10:59:12,130 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Schema `book` is up to date. No migration necessary.
+2022-12-13 10:59:12,283 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-13 10:59:12,375 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-13 10:59:12,704 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-13 10:59:12,879 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-12-13 10:59:14,041 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-13 10:59:14,058 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-13 10:59:14,994 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-13 10:59:15,412 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2022-12-13 10:59:15,436 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2022-12-13 10:59:15,447 INFO org.springframework.boot.StartupInfoLogger [main] Started DataJpaBooksProjectApplication in 7.523 seconds (JVM running for 9.014)
+2022-12-13 10:59:15,569 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 10:59:15,585 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 10:59:15,587 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 10:59:15,636 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 10:59:15,641 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 10:59:15,645 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:01:00,137 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(10)-127.0.0.1] Application shutdown requested.
+2022-12-13 11:01:00,158 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:01:00,159 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Stopping service [Tomcat]
+2022-12-13 11:01:00,164 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:01:00,167 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:01:00,171 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(10)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-13 11:01:00,173 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(10)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-12-13 11:01:00,194 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(10)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-12-13 11:01:52,904 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2022-12-13 11:01:52,970 INFO org.springframework.boot.StartupInfoLogger [main] Starting DataJpaBooksProjectApplication using Java 17.0.4.1 on LAPTOP-836RRBLI with PID 8516 (C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project\target\classes started by Admin in C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project)
+2022-12-13 11:01:52,970 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-13 11:01:54,158 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-13 11:01:54,283 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 107 ms. Found 2 JPA repository interfaces.
+2022-12-13 11:01:55,426 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2022-12-13 11:01:55,428 INFO org.apache.juli.logging.DirectJDKLog [main] Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2022-12-13 11:01:55,430 INFO org.apache.juli.logging.DirectJDKLog [main] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-12-13 11:01:55,431 INFO org.apache.juli.logging.DirectJDKLog [main] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-12-13 11:01:55,437 INFO org.apache.juli.logging.DirectJDKLog [main] OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2022-12-13 11:01:55,455 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:01:55,456 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-12-13 11:01:55,457 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-13 11:01:55,641 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-12-13 11:01:55,641 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2596 ms
+2022-12-13 11:01:55,889 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Flyway Community Edition 8.5.13 by Redgate
+2022-12-13 11:01:55,890 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-12-13 11:01:55,890 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] 
+2022-12-13 11:01:55,898 ERROR org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Skipping filesystem location:\another\migration\directory (not found).
+2022-12-13 11:01:55,903 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] 2 SQL migrations were detected but not run because they did not follow the filename convention.
+2022-12-13 11:01:55,903 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] If this is in error, enable debug logging or 'validateMigrationNaming' to fail fast and see a list of the invalid file names.
+2022-12-13 11:01:55,906 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-12-13 11:01:56,482 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-12-13 11:01:56,536 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Database: jdbc:mysql://localhost:3306/book (MySQL 8.0)
+2022-12-13 11:01:56,619 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Successfully validated 1 migration (execution time 00:00.030s)
+2022-12-13 11:01:56,642 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Current version of schema `book`: 1
+2022-12-13 11:01:56,644 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Schema `book` is up to date. No migration necessary.
+2022-12-13 11:01:56,789 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-13 11:01:56,884 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-13 11:01:57,236 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-13 11:01:57,414 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-12-13 11:01:58,631 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-13 11:01:58,647 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-13 11:01:59,724 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-13 11:02:00,337 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:02:00,379 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2022-12-13 11:02:00,395 INFO org.springframework.boot.StartupInfoLogger [main] Started DataJpaBooksProjectApplication in 8.091 seconds (JVM running for 9.518)
+2022-12-13 11:02:00,551 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:02:00,572 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:02:00,576 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:02:00,634 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:02:00,641 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:02:00,644 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:02:22,615 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(10)-127.0.0.1] Application shutdown requested.
+2022-12-13 11:02:22,633 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:02:22,634 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Stopping service [Tomcat]
+2022-12-13 11:02:22,639 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:02:22,649 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:02:22,664 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(10)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-13 11:02:22,667 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(10)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-12-13 11:02:22,685 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(10)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-12-13 11:02:41,652 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2022-12-13 11:02:41,733 INFO org.springframework.boot.StartupInfoLogger [main] Starting DataJpaBooksProjectApplication using Java 17.0.4.1 on LAPTOP-836RRBLI with PID 10296 (C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project\target\classes started by Admin in C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project)
+2022-12-13 11:02:41,735 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-13 11:02:42,862 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-13 11:02:42,987 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 110 ms. Found 2 JPA repository interfaces.
+2022-12-13 11:02:44,085 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2022-12-13 11:02:44,088 INFO org.apache.juli.logging.DirectJDKLog [main] Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2022-12-13 11:02:44,089 INFO org.apache.juli.logging.DirectJDKLog [main] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-12-13 11:02:44,090 INFO org.apache.juli.logging.DirectJDKLog [main] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-12-13 11:02:44,096 INFO org.apache.juli.logging.DirectJDKLog [main] OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2022-12-13 11:02:44,110 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:02:44,111 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-12-13 11:02:44,111 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-13 11:02:44,301 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-12-13 11:02:44,301 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2492 ms
+2022-12-13 11:02:44,536 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Flyway Community Edition 8.5.13 by Redgate
+2022-12-13 11:02:44,537 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-12-13 11:02:44,538 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] 
+2022-12-13 11:02:44,547 ERROR org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Skipping filesystem location:\another\migration\directory (not found).
+2022-12-13 11:02:44,555 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] 2 SQL migrations were detected but not run because they did not follow the filename convention.
+2022-12-13 11:02:44,555 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] If this is in error, enable debug logging or 'validateMigrationNaming' to fail fast and see a list of the invalid file names.
+2022-12-13 11:02:44,559 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-12-13 11:02:45,076 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-12-13 11:02:45,127 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Database: jdbc:mysql://localhost:3306/book (MySQL 8.0)
+2022-12-13 11:02:45,214 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Successfully validated 1 migration (execution time 00:00.037s)
+2022-12-13 11:02:45,238 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Current version of schema `book`: 1
+2022-12-13 11:02:45,240 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Schema `book` is up to date. No migration necessary.
+2022-12-13 11:02:45,376 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-13 11:02:45,469 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-13 11:02:45,782 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-13 11:02:46,061 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-12-13 11:02:47,317 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-13 11:02:47,337 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-13 11:02:48,203 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-13 11:02:48,630 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:02:48,652 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2022-12-13 11:02:48,666 INFO org.springframework.boot.StartupInfoLogger [main] Started DataJpaBooksProjectApplication in 7.621 seconds (JVM running for 9.228)
+2022-12-13 11:02:48,802 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:02:48,824 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:02:48,827 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:02:48,878 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:02:48,884 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:02:48,887 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:04:29,451 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(11)-127.0.0.1] Application shutdown requested.
+2022-12-13 11:04:29,473 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:04:29,473 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Stopping service [Tomcat]
+2022-12-13 11:04:29,479 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:04:29,483 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:04:29,489 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(11)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-13 11:04:29,491 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(11)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-12-13 11:04:29,506 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(11)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-12-13 11:04:47,186 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2022-12-13 11:04:47,251 INFO org.springframework.boot.StartupInfoLogger [main] Starting DataJpaBooksProjectApplication using Java 17.0.4.1 on LAPTOP-836RRBLI with PID 8244 (C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project\target\classes started by Admin in C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project)
+2022-12-13 11:04:47,251 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-13 11:04:48,090 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-13 11:04:48,170 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 70 ms. Found 2 JPA repository interfaces.
+2022-12-13 11:04:49,241 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2022-12-13 11:04:49,243 INFO org.apache.juli.logging.DirectJDKLog [main] Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2022-12-13 11:04:49,245 INFO org.apache.juli.logging.DirectJDKLog [main] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-12-13 11:04:49,245 INFO org.apache.juli.logging.DirectJDKLog [main] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-12-13 11:04:49,250 INFO org.apache.juli.logging.DirectJDKLog [main] OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2022-12-13 11:04:49,265 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:04:49,266 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-12-13 11:04:49,267 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-13 11:04:49,438 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-12-13 11:04:49,439 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2121 ms
+2022-12-13 11:04:49,674 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Flyway Community Edition 8.5.13 by Redgate
+2022-12-13 11:04:49,674 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-12-13 11:04:49,675 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] 
+2022-12-13 11:04:49,685 ERROR org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Skipping filesystem location:\another\migration\directory (not found).
+2022-12-13 11:04:49,693 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] 2 SQL migrations were detected but not run because they did not follow the filename convention.
+2022-12-13 11:04:49,693 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] If this is in error, enable debug logging or 'validateMigrationNaming' to fail fast and see a list of the invalid file names.
+2022-12-13 11:04:49,697 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-12-13 11:04:50,200 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-12-13 11:04:50,281 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Database: jdbc:mysql://localhost:3306/book (MySQL 8.0)
+2022-12-13 11:04:50,390 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Successfully validated 1 migration (execution time 00:00.042s)
+2022-12-13 11:04:50,422 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Current version of schema `book`: 1
+2022-12-13 11:04:50,425 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Schema `book` is up to date. No migration necessary.
+2022-12-13 11:04:50,621 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-13 11:04:50,762 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-13 11:04:51,017 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-13 11:04:51,134 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-12-13 11:04:52,160 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-13 11:04:52,179 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-13 11:04:53,084 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-13 11:04:53,667 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:04:53,694 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2022-12-13 11:04:53,710 INFO org.springframework.boot.StartupInfoLogger [main] Started DataJpaBooksProjectApplication in 6.897 seconds (JVM running for 8.045)
+2022-12-13 11:04:53,827 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:04:53,847 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:04:53,849 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:04:53,906 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:04:53,912 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:04:53,915 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:04:57,849 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T11:04:57.849177500
+2022-12-13 11:04:57,849 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T11:04:57.849177500
+2022-12-13 11:05:03,723 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T11:05:03.723707900
+2022-12-13 11:05:03,739 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T11:05:03.739823800
+2022-12-13 11:05:09,730 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T11:05:09.730803700
+2022-12-13 11:05:09,745 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T11:05:09.745764300
+2022-12-13 11:05:15,754 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T11:05:15.754561900
+2022-12-13 11:05:15,754 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T11:05:15.754561900
+2022-12-13 11:05:21,742 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T11:05:21.742231200
+2022-12-13 11:05:21,756 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T11:05:21.756038700
+2022-12-13 11:05:27,733 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T11:05:27.733362700
+2022-12-13 11:05:27,748 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T11:05:27.748643300
+2022-12-13 11:05:33,738 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T11:05:33.738087600
+2022-12-13 11:05:33,738 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T11:05:33.737874500
+2022-12-13 11:05:39,734 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T11:05:39.734397900
+2022-12-13 11:05:39,734 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T11:05:39.734397900
+2022-12-13 11:05:45,737 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T11:05:45.737769900
+2022-12-13 11:05:45,737 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T11:05:45.737769900
+2022-12-13 11:05:51,736 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T11:05:51.736710300
+2022-12-13 11:05:51,736 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T11:05:51.736531500
+2022-12-13 11:05:57,743 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T11:05:57.743800300
+2022-12-13 11:05:57,743 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T11:05:57.743800300
+2022-12-13 11:06:03,752 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T11:06:03.752028300
+2022-12-13 11:06:03,752 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T11:06:03.752028300
+2022-12-13 11:06:09,266 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(10)-127.0.0.1] Application shutdown requested.
+2022-12-13 11:06:09,286 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:06:09,287 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Stopping service [Tomcat]
+2022-12-13 11:06:09,292 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:06:09,295 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:06:09,301 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(10)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-13 11:06:09,304 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(10)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-12-13 11:06:09,316 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(10)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-12-13 11:06:09,746 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T11:06:09.746098900
+2022-12-13 11:06:09,746 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T11:06:09.746098900
+2022-12-13 11:06:09,754 ERROR org.springframework.aop.interceptor.SimpleAsyncUncaughtExceptionHandler [ThreadPoolTaskExecutor-1] Unexpected exception occurred invoking async method: public void com.globale.book.Service.PriceSchedule.computeDiscount() throws java.lang.InterruptedException
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:309)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:137)
+	at net.javacrumbs.shedlock.provider.jdbctemplate.JdbcTemplateStorageAccessor.execute(JdbcTemplateStorageAccessor.java:115)
+	at net.javacrumbs.shedlock.provider.jdbctemplate.JdbcTemplateStorageAccessor.doUnlock(JdbcTemplateStorageAccessor.java:110)
+	at net.javacrumbs.shedlock.provider.jdbctemplate.JdbcTemplateStorageAccessor.unlock(JdbcTemplateStorageAccessor.java:101)
+	at net.javacrumbs.shedlock.support.StorageBasedLockProvider$StorageLock.doUnlock(StorageBasedLockProvider.java:104)
+	at net.javacrumbs.shedlock.core.AbstractSimpleLock.unlock(AbstractSimpleLock.java:35)
+	at net.javacrumbs.shedlock.core.DefaultLockingTaskExecutor.executeWithLock(DefaultLockingTaskExecutor.java:79)
+	at net.javacrumbs.shedlock.spring.aop.MethodProxyScheduledLockAdvisor$LockingInterceptor.invoke(MethodProxyScheduledLockAdvisor.java:86)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:96)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:265)
+	... 17 common frames omitted
+2022-12-13 11:06:09,754 ERROR org.springframework.aop.interceptor.SimpleAsyncUncaughtExceptionHandler [ThreadPoolTaskExecutor-2] Unexpected exception occurred invoking async method: public void com.globale.book.Service.PriceSchedule.computePrice() throws java.lang.InterruptedException
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:309)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:137)
+	at net.javacrumbs.shedlock.provider.jdbctemplate.JdbcTemplateStorageAccessor.execute(JdbcTemplateStorageAccessor.java:115)
+	at net.javacrumbs.shedlock.provider.jdbctemplate.JdbcTemplateStorageAccessor.doUnlock(JdbcTemplateStorageAccessor.java:110)
+	at net.javacrumbs.shedlock.provider.jdbctemplate.JdbcTemplateStorageAccessor.unlock(JdbcTemplateStorageAccessor.java:101)
+	at net.javacrumbs.shedlock.support.StorageBasedLockProvider$StorageLock.doUnlock(StorageBasedLockProvider.java:104)
+	at net.javacrumbs.shedlock.core.AbstractSimpleLock.unlock(AbstractSimpleLock.java:35)
+	at net.javacrumbs.shedlock.core.DefaultLockingTaskExecutor.executeWithLock(DefaultLockingTaskExecutor.java:79)
+	at net.javacrumbs.shedlock.spring.aop.MethodProxyScheduledLockAdvisor$LockingInterceptor.invoke(MethodProxyScheduledLockAdvisor.java:86)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:96)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:265)
+	... 17 common frames omitted
+2022-12-13 11:10:10,689 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2022-12-13 11:10:10,758 INFO org.springframework.boot.StartupInfoLogger [main] Starting DataJpaBooksProjectApplication using Java 17.0.4.1 on LAPTOP-836RRBLI with PID 20584 (C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project\target\classes started by Admin in C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project)
+2022-12-13 11:10:10,760 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-13 11:10:12,382 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-13 11:10:12,486 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 87 ms. Found 2 JPA repository interfaces.
+2022-12-13 11:10:13,550 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2022-12-13 11:10:13,554 INFO org.apache.juli.logging.DirectJDKLog [main] Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2022-12-13 11:10:13,555 INFO org.apache.juli.logging.DirectJDKLog [main] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-12-13 11:10:13,556 INFO org.apache.juli.logging.DirectJDKLog [main] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-12-13 11:10:13,563 INFO org.apache.juli.logging.DirectJDKLog [main] OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2022-12-13 11:10:13,580 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:10:13,581 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-12-13 11:10:13,582 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-13 11:10:13,807 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-12-13 11:10:13,808 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2972 ms
+2022-12-13 11:10:14,298 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Flyway Community Edition 8.5.13 by Redgate
+2022-12-13 11:10:14,298 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-12-13 11:10:14,298 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] 
+2022-12-13 11:10:14,305 ERROR org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Skipping filesystem location:\another\migration\directory (not found).
+2022-12-13 11:10:14,309 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] 2 SQL migrations were detected but not run because they did not follow the filename convention.
+2022-12-13 11:10:14,310 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] If this is in error, enable debug logging or 'validateMigrationNaming' to fail fast and see a list of the invalid file names.
+2022-12-13 11:10:14,312 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-12-13 11:10:14,940 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-12-13 11:10:14,998 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Database: jdbc:mysql://localhost:3306/book (MySQL 8.0)
+2022-12-13 11:10:15,098 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Successfully validated 1 migration (execution time 00:00.041s)
+2022-12-13 11:10:15,126 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Current version of schema `book`: 1
+2022-12-13 11:10:15,128 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Schema `book` is up to date. No migration necessary.
+2022-12-13 11:10:15,295 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-13 11:10:15,421 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-13 11:10:15,678 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-13 11:10:15,884 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-12-13 11:10:17,137 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-13 11:10:17,157 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-13 11:10:18,303 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-13 11:10:19,160 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-12-13 11:10:19,219 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:10:19,258 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2022-12-13 11:10:19,284 INFO org.springframework.boot.StartupInfoLogger [main] Started DataJpaBooksProjectApplication in 9.243 seconds (JVM running for 11.032)
+2022-12-13 11:10:19,436 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:10:19,453 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:10:19,456 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:10:19,524 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:10:19,533 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:10:19,537 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:10:22,058 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(9)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-13 11:10:22,059 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(9)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2022-12-13 11:10:22,062 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(9)-127.0.0.1] Completed initialization in 2 ms
+2022-12-13 11:13:35,229 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(14)-127.0.0.1] Application shutdown requested.
+2022-12-13 11:13:35,250 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(14)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:13:35,251 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(14)-127.0.0.1] Stopping service [Tomcat]
+2022-12-13 11:13:35,252 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(14)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-13 11:13:35,257 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(14)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:13:35,260 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(14)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:13:35,268 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(14)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-13 11:13:35,273 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(14)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-12-13 11:13:35,292 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(14)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-12-13 11:13:53,459 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2022-12-13 11:13:53,537 INFO org.springframework.boot.StartupInfoLogger [main] Starting DataJpaBooksProjectApplication using Java 17.0.4.1 on LAPTOP-836RRBLI with PID 6876 (C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project\target\classes started by Admin in C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\repo\data-jpa-Books-project)
+2022-12-13 11:13:53,539 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-13 11:13:55,135 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-13 11:13:55,276 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 122 ms. Found 2 JPA repository interfaces.
+2022-12-13 11:13:56,332 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2022-12-13 11:13:56,335 INFO org.apache.juli.logging.DirectJDKLog [main] Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2022-12-13 11:13:56,336 INFO org.apache.juli.logging.DirectJDKLog [main] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-12-13 11:13:56,336 INFO org.apache.juli.logging.DirectJDKLog [main] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-12-13 11:13:56,342 INFO org.apache.juli.logging.DirectJDKLog [main] OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2022-12-13 11:13:56,360 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:13:56,361 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-12-13 11:13:56,362 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-13 11:13:56,564 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-12-13 11:13:56,565 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2952 ms
+2022-12-13 11:13:57,023 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Flyway Community Edition 8.5.13 by Redgate
+2022-12-13 11:13:57,023 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-12-13 11:13:57,023 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] 
+2022-12-13 11:13:57,030 ERROR org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Skipping filesystem location:\another\migration\directory (not found).
+2022-12-13 11:13:57,034 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] 2 SQL migrations were detected but not run because they did not follow the filename convention.
+2022-12-13 11:13:57,034 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] If this is in error, enable debug logging or 'validateMigrationNaming' to fail fast and see a list of the invalid file names.
+2022-12-13 11:13:57,037 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-12-13 11:13:57,664 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-12-13 11:13:57,738 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Database: jdbc:mysql://localhost:3306/book (MySQL 8.0)
+2022-12-13 11:13:57,843 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Successfully validated 1 migration (execution time 00:00.041s)
+2022-12-13 11:13:57,873 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Current version of schema `book`: 1
+2022-12-13 11:13:57,876 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Schema `book` is up to date. No migration necessary.
+2022-12-13 11:13:58,062 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-13 11:13:58,187 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-13 11:13:58,452 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-13 11:13:58,602 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-12-13 11:13:59,690 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-13 11:13:59,710 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-13 11:14:00,762 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-13 11:14:01,503 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-12-13 11:14:01,550 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:14:01,576 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2022-12-13 11:14:01,599 INFO org.springframework.boot.StartupInfoLogger [main] Started DataJpaBooksProjectApplication in 8.749 seconds (JVM running for 10.228)
+2022-12-13 11:14:01,731 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:14:01,749 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:14:01,751 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        authers
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, email, ip_address, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:14:01,801 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:14:01,807 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:14:01,811 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [main] 
+    insert 
+    into
+        books
+        (created_by, created_date, is_deleted, last_modified_by, last_modified_date, status_code, auther_id, name, price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-13 11:14:03,047 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(9)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-13 11:14:03,048 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(9)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2022-12-13 11:14:03,051 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(9)-127.0.0.1] Completed initialization in 3 ms
+2022-12-13 11:14:15,463 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [http-nio-8082-exec-2] Flyway Community Edition 8.5.13 by Redgate
+2022-12-13 11:14:15,464 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [http-nio-8082-exec-2] See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-12-13 11:14:15,464 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [http-nio-8082-exec-2] 
+2022-12-13 11:14:15,466 ERROR org.flywaydb.core.internal.logging.slf4j.Slf4jLog [http-nio-8082-exec-2] Skipping filesystem location:\another\migration\directory (not found).
+2022-12-13 11:14:15,467 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [http-nio-8082-exec-2] 2 SQL migrations were detected but not run because they did not follow the filename convention.
+2022-12-13 11:14:15,468 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [http-nio-8082-exec-2] If this is in error, enable debug logging or 'validateMigrationNaming' to fail fast and see a list of the invalid file names.
+2022-12-13 11:16:11,645 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T11:16:11.645485500
+2022-12-13 11:16:11,646 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T11:16:11.645485500
+2022-12-13 11:16:17,632 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T11:16:17.632330800
+2022-12-13 11:16:17,648 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T11:16:17.648292400
+2022-12-13 11:16:23,641 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T11:16:23.641247200
+2022-12-13 11:16:23,641 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T11:16:23.641247200
+2022-12-13 11:16:29,631 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T11:16:29.631555200
+2022-12-13 11:16:29,631 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T11:16:29.631555200
+2022-12-13 11:16:35,635 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T11:16:35.635774800
+2022-12-13 11:16:35,635 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T11:16:35.635774800
+2022-12-13 11:16:41,628 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T11:16:41.628121400
+2022-12-13 11:16:41,628 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T11:16:41.628121400
+2022-12-13 11:16:47,630 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T11:16:47.630651400
+2022-12-13 11:16:47,630 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T11:16:47.630651400
+2022-12-13 11:16:53,631 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T11:16:53.631176100
+2022-12-13 11:16:53,631 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T11:16:53.631176100
+2022-12-13 11:16:59,617 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T11:16:59.617921400
+2022-12-13 11:16:59,617 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T11:16:59.617921400
+2022-12-13 11:17:05,632 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T11:17:05.632180400
+2022-12-13 11:17:05,632 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T11:17:05.632180400
+2022-12-13 11:17:11,631 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T11:17:11.631124300
+2022-12-13 11:17:11,631 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T11:17:11.631124300
+2022-12-13 11:17:17,630 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T11:17:17.630737100
+2022-12-13 11:17:17,630 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T11:17:17.630737100
+2022-12-13 11:17:23,622 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T11:17:23.622687600
+2022-12-13 11:17:23,622 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T11:17:23.622687600
+2022-12-13 11:17:29,628 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T11:17:29.628889
+2022-12-13 11:17:29,628 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T11:17:29.628889
+2022-12-13 11:17:35,631 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T11:17:35.631557200
+2022-12-13 11:17:35,631 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T11:17:35.631557200
+2022-12-13 11:17:41,629 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T11:17:41.629114600
+2022-12-13 11:17:41,629 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T11:17:41.629114600
+2022-12-13 11:17:47,630 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T11:17:47.630664600
+2022-12-13 11:17:47,630 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T11:17:47.630426600
+2022-12-13 11:17:53,616 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T11:17:53.616833400
+2022-12-13 11:17:53,616 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T11:17:53.616833400
+2022-12-13 11:17:59,626 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T11:17:59.626168700
+2022-12-13 11:17:59,626 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T11:17:59.626168700
+2022-12-13 11:18:05,630 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T11:18:05.630164500
+2022-12-13 11:18:05,630 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T11:18:05.630384300
+2022-12-13 11:18:11,619 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T11:18:11.619670500
+2022-12-13 11:18:11,632 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T11:18:11.632830800
+2022-12-13 11:18:17,624 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T11:18:17.624404500
+2022-12-13 11:18:17,624 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T11:18:17.624404500
+2022-12-13 11:18:23,624 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T11:18:23.624736800
+2022-12-13 11:18:23,625 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T11:18:23.625843600
+2022-12-13 11:18:29,608 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T11:18:29.608779
+2022-12-13 11:18:29,608 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T11:18:29.608779
+2022-12-13 11:18:35,627 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T11:18:35.627428
+2022-12-13 11:18:35,627 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T11:18:35.627428
+2022-12-13 11:18:41,619 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T11:18:41.619750400
+2022-12-13 11:18:41,619 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T11:18:41.619750400
+2022-12-13 11:18:47,637 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T11:18:47.637436800
+2022-12-13 11:18:47,637 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T11:18:47.637436800
+2022-12-13 11:18:53,618 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T11:18:53.618473600
+2022-12-13 11:18:53,618 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T11:18:53.618473600
+2022-12-13 11:18:59,623 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T11:18:59.623848900
+2022-12-13 11:18:59,623 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T11:18:59.623848900
+2022-12-13 11:19:05,614 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T11:19:05.614966
+2022-12-13 11:19:05,615 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T11:19:05.615929400
+2022-12-13 11:19:11,627 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T11:19:11.627662600
+2022-12-13 11:19:11,627 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T11:19:11.627662600
+2022-12-13 11:19:17,631 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T11:19:17.630907400
+2022-12-13 11:19:17,631 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T11:19:17.630907400
+2022-12-13 11:19:23,625 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T11:19:23.625598100
+2022-12-13 11:19:23,625 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T11:19:23.625598100
+2022-12-13 11:19:29,614 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T11:19:29.614877600
+2022-12-13 11:19:29,614 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T11:19:29.614877600
+2022-12-13 11:19:35,617 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T11:19:35.617370300
+2022-12-13 11:19:35,621 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T11:19:35.621519200
+2022-12-13 11:19:41,629 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T11:19:41.629100
+2022-12-13 11:19:41,629 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T11:19:41.629100
+2022-12-13 11:19:47,629 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T11:19:47.629404600
+2022-12-13 11:19:47,629 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T11:19:47.629404600
+2022-12-13 11:19:53,636 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T11:19:53.636949200
+2022-12-13 11:19:53,636 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T11:19:53.636949200
+2022-12-13 11:19:59,640 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T11:19:59.640083900
+2022-12-13 11:19:59,640 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T11:19:59.640083900
+2022-12-13 11:20:05,631 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T11:20:05.631871700
+2022-12-13 11:20:05,631 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T11:20:05.631871700
+2022-12-13 11:20:11,628 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T11:20:11.628323900
+2022-12-13 11:20:11,628 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T11:20:11.628323900
+2022-12-13 11:20:17,622 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T11:20:17.622527500
+2022-12-13 11:20:17,622 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T11:20:17.622527500
+2022-12-13 11:20:23,627 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T11:20:23.627425
+2022-12-13 11:20:23,627 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T11:20:23.627425
+2022-12-13 11:20:29,621 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T11:20:29.621667100
+2022-12-13 11:20:29,636 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T11:20:29.636626700
+2022-12-13 11:20:35,638 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T11:20:35.638624300
+2022-12-13 11:20:35,638 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T11:20:35.638624300
+2022-12-13 11:20:41,634 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T11:20:41.634999600
+2022-12-13 11:20:41,634 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T11:20:41.634999600
+2022-12-13 11:20:47,633 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T11:20:47.633667800
+2022-12-13 11:20:47,633 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T11:20:47.633667800
+2022-12-13 11:20:53,627 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T11:20:53.627388700
+2022-12-13 11:20:53,627 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T11:20:53.627388700
+2022-12-13 11:20:59,639 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T11:20:59.638827800
+2022-12-13 11:20:59,639 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T11:20:59.638827800
+2022-12-13 11:21:05,634 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T11:21:05.634375200
+2022-12-13 11:21:05,634 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T11:21:05.634657300
+2022-12-13 11:21:11,627 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute Discount >> 2022-12-13T11:21:11.627205800
+2022-12-13 11:21:11,627 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute price >> 2022-12-13T11:21:11.627205800
+2022-12-13 11:21:17,617 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T11:21:17.617457500
+2022-12-13 11:21:17,631 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T11:21:17.631819600
+2022-12-13 11:21:23,625 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T11:21:23.625890900
+2022-12-13 11:21:23,625 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T11:21:23.625890900
+2022-12-13 11:21:29,625 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute Discount >> 2022-12-13T11:21:29.625301700
+2022-12-13 11:21:29,639 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2022-12-13T11:21:29.639000200
+2022-12-13 11:21:35,633 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T11:21:35.633411100
+2022-12-13 11:21:35,633 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T11:21:35.633411100
+2022-12-13 11:21:41,628 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T11:21:41.628391600
+2022-12-13 11:21:41,629 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T11:21:41.628391600
+2022-12-13 11:21:47,631 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-3] compute price >> 2022-12-13T11:21:47.631188900
+2022-12-13 11:21:47,631 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-4] compute Discount >> 2022-12-13T11:21:47.631188900
+2022-12-13 11:21:52,788 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(17)-127.0.0.1] Application shutdown requested.
+2022-12-13 11:21:52,922 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(17)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:21:52,922 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(17)-127.0.0.1] Stopping service [Tomcat]
+2022-12-13 11:21:52,926 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(17)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-13 11:21:52,933 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(17)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:21:52,936 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(17)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8082"]
+2022-12-13 11:21:52,944 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(17)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-13 11:21:52,950 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(17)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-12-13 11:21:52,964 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(17)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-12-13 11:21:53,633 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-2] compute Discount >> 2022-12-13T11:21:53.633910600
+2022-12-13 11:21:53,633 INFO com.globale.book.Service.PriceSchedule [ThreadPoolTaskExecutor-1] compute price >> 2022-12-13T11:21:53.633716300
+2022-12-13 11:21:53,641 ERROR org.springframework.aop.interceptor.SimpleAsyncUncaughtExceptionHandler [ThreadPoolTaskExecutor-2] Unexpected exception occurred invoking async method: public void com.globale.book.Service.PriceSchedule.computeDiscount() throws java.lang.InterruptedException
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:309)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:137)
+	at net.javacrumbs.shedlock.provider.jdbctemplate.JdbcTemplateStorageAccessor.execute(JdbcTemplateStorageAccessor.java:115)
+	at net.javacrumbs.shedlock.provider.jdbctemplate.JdbcTemplateStorageAccessor.doUnlock(JdbcTemplateStorageAccessor.java:110)
+	at net.javacrumbs.shedlock.provider.jdbctemplate.JdbcTemplateStorageAccessor.unlock(JdbcTemplateStorageAccessor.java:101)
+	at net.javacrumbs.shedlock.support.StorageBasedLockProvider$StorageLock.doUnlock(StorageBasedLockProvider.java:104)
+	at net.javacrumbs.shedlock.core.AbstractSimpleLock.unlock(AbstractSimpleLock.java:35)
+	at net.javacrumbs.shedlock.core.DefaultLockingTaskExecutor.executeWithLock(DefaultLockingTaskExecutor.java:79)
+	at net.javacrumbs.shedlock.spring.aop.MethodProxyScheduledLockAdvisor$LockingInterceptor.invoke(MethodProxyScheduledLockAdvisor.java:86)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:96)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:265)
+	... 17 common frames omitted
+2022-12-13 11:21:53,641 ERROR org.springframework.aop.interceptor.SimpleAsyncUncaughtExceptionHandler [ThreadPoolTaskExecutor-1] Unexpected exception occurred invoking async method: public void com.globale.book.Service.PriceSchedule.computePrice() throws java.lang.InterruptedException
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:309)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:137)
+	at net.javacrumbs.shedlock.provider.jdbctemplate.JdbcTemplateStorageAccessor.execute(JdbcTemplateStorageAccessor.java:115)
+	at net.javacrumbs.shedlock.provider.jdbctemplate.JdbcTemplateStorageAccessor.doUnlock(JdbcTemplateStorageAccessor.java:110)
+	at net.javacrumbs.shedlock.provider.jdbctemplate.JdbcTemplateStorageAccessor.unlock(JdbcTemplateStorageAccessor.java:101)
+	at net.javacrumbs.shedlock.support.StorageBasedLockProvider$StorageLock.doUnlock(StorageBasedLockProvider.java:104)
+	at net.javacrumbs.shedlock.core.AbstractSimpleLock.unlock(AbstractSimpleLock.java:35)
+	at net.javacrumbs.shedlock.core.DefaultLockingTaskExecutor.executeWithLock(DefaultLockingTaskExecutor.java:79)
+	at net.javacrumbs.shedlock.spring.aop.MethodProxyScheduledLockAdvisor$LockingInterceptor.invoke(MethodProxyScheduledLockAdvisor.java:86)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:96)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:265)
+	... 17 common frames omitted
